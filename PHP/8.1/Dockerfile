@@ -20,8 +20,7 @@ RUN     apt update \
         php8.1-curl php8.1-zip php8.1-readline php8.1-yaml \
 	php8.1-tokenizer php8.1-dom php8.1-cgi libphp8.1-embed
 
-RUN	mkdir -p /home/container/etc/php/ \
-        && ln /etc/php/8.1/cli/php.ini /home/container/ \
+RUN	ln /etc/php/8.1/cli/php.ini /home/container/ \
         && chown -Rv container:container /home/container/
 
 ENV     HOME=/home/container
