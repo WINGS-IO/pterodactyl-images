@@ -17,7 +17,7 @@ RUN     echo "deb https://packages.sury.org/php/ bullseye main" >> /etc/apt/sour
 RUN     apt update \
         && apt install -y php8.1 php8.1-common php8.1-cli php8.1-gd \
         php8.1-mysql php8.1-mbstring php8.1-bcmath php8.1-xml php8.1-fpm \
-        php8.1-curl php8.1-zip php8.1-readline php8.1-yaml php8.1-json \
+        php8.1-curl php8.1-zip php8.1-readline php8.1-yaml \
 		php8.1-tokenizer php8.1-dom php8.1-cgi libphp8.1-embed
 
 ENV     HOME=/home/container
