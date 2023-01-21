@@ -11,7 +11,7 @@ RUN     dpkg --add-architecture i386 \
         && apt install -y --no-install-recommends gnupg2 tzdata \
         software-properties-common ca-certificates apt-transport-https gnupg2
 
-RUN     echo "deb https://packages.sury.org/php/ bullseye main" >> /etc/apt/sources.list \
+RUN     echo "deb https://packages.sury.org/php/ buster main" >> /etc/apt/sources.list \
         && wget -qO - https://packages.sury.org/php/apt.gpg | apt-key add -
 
 RUN     apt update \
