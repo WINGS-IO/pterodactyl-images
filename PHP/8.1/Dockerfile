@@ -21,7 +21,8 @@ RUN     apt update \
 	php8.1-tokenizer php8.1-dom php8.1-cgi libphp8.1-embed
 
 RUN	mkdir -p /home/container/etc/php/ \
-        && ln -s /etc/php/ /home/container/etc/php/
+        && ln -s /etc/php/ /home/container/etc/php/ \
+        && chown -Rv container:container /home/container/
 
 ENV     HOME=/home/container
 
