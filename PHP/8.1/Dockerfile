@@ -1,7 +1,7 @@
 # ---------------------------------------
 # PHP 8.1 image by WINGS-IO 
 # ---------------------------------------
-FROM    ghcr.io/parkervcp/yolks:debian
+FROM    quay.io/parkervcp/pterodactyl-images:base_debian
 
 LABEL   author="WINGS-IO" maintainer="system@wings.host"
 
